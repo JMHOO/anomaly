@@ -1,8 +1,10 @@
+'''
+Main Function
+Jiaming Hu 2017-07-12
+
+Process parameters from command line then pass the control to AnomalyService()
+'''
 import argparse
-import os
-import pandas as pd
-import numpy as np
-from src.feed import StreamLog
 from src.service import AnomalyService
 
 
@@ -18,8 +20,9 @@ def main():
         cmdParser.print_help()
         exit()
 
+    # start main service
     main_service = AnomalyService()
-    main_service.Start()
+    main_service.Start(args)
 
 
 if __name__ == "__main__":
