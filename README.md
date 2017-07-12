@@ -70,6 +70,7 @@ Basic Archtechture
 
 # Envrionment
 Python 3
+Tested under python 3.5.2
 
 # Run 
 `python3 detection_main.py --batch-log=batch_log.json --stream-log=stream_log.json --output=flagged_purchases.json`
